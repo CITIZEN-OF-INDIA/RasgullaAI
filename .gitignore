@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.*
+
+# Frontend
+node_modules/
+dist/
+
+# VS Code
+.vscode/

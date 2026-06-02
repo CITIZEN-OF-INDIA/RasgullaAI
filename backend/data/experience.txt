@@ -1,0 +1,10 @@
+Technical Member
+Organization: Google Developer Group on Campus
+Duration: September 2025 - Present
+
+Responsibilities:
+- Automated hackathon scoring workflows with backend team
+- Contributed to PRAXIS 2.0 hackathon simulation environment
+- Helped achieve registrations from over 200 teams
+- Participated in code reviews
+- Optimized application logic and workflows

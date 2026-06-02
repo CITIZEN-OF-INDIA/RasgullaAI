@@ -1,0 +1,11 @@
+My name is Ritvik Arora.
+
+I am a second-year B.Tech Computer Science and Engineering student at Guru Nanak Dev Rohini Campus, DSEU.
+
+I am passionate about Software Development, Artificial Intelligence, Full-Stack Development, and Problem Solving.
+
+I have hands-on experience building web, desktop, and Android applications using modern technologies such as React, Node.js, TypeScript, Kotlin, MongoDB, and Python.
+
+Apart from academics, I actively contribute to developer communities and currently serve as a Technical Member at Google Developer Group on Campus.
+
+I also founded a campus coding club to encourage technical learning and collaboration among students.

@@ -1,0 +1,45 @@
+Project 1: GPT 5.O - Offline First Real-Time Chat Application
+
+Description:
+A scalable cross-platform chat system supporting Web, Desktop, and Android platforms.
+
+Technologies:
+React
+TypeScript
+Node.js
+Socket.IO
+MongoDB
+Express.js
+Electron.js
+
+Key Features:
+- Real-time messaging
+- Presence tracking
+- Delivery receipts
+- Read receipts
+- Offline-first synchronization
+- IndexedDB storage
+- Automatic conflict-safe synchronization
+- JWT Authentication
+- Desktop application packaging using Electron
+
+--------------------------------------------------
+
+Project 2: App Blocker - Android Productivity Application
+
+Description:
+A native Android application that blocks selected applications to improve productivity.
+
+Technologies:
+Kotlin
+Android SDK
+Usage Access APIs
+
+Key Features:
+- Foreground app detection
+- Usage Access monitoring
+- System overlay blocking
+- Animated blocking screens
+- Background monitoring
+- Multi-version Android compatibility
+- Optimized battery usage

@@ -1,0 +1,37 @@
+Programming Languages:
+- C
+- C++
+- Java
+- Kotlin
+- Python
+- TypeScript
+
+Frontend Technologies:
+- HTML
+- CSS
+- JavaScript
+- React
+- Vite
+- UI/UX Design
+- Figma
+
+Backend Technologies:
+- Node.js
+- Express.js
+- REST APIs
+
+Databases:
+- MongoDB
+- Mongoose
+
+Tools and Platforms:
+- Git
+- GitHub
+- Electron.js
+- Android Studio
+- VS Code
+- WordPress
+
+Core Computer Science:
+- Data Structures and Algorithms
+- Object Oriented Programming

@@ -1,0 +1,7 @@
+Ritvik Arora is a Computer Science student with strong interests in Full-Stack Development, Software Engineering, Artificial Intelligence, and Mobile Application Development.
+
+He has experience working with React, Node.js, MongoDB, TypeScript, Kotlin, Python, and modern software development tools.
+
+His notable projects include a cross-platform offline-first chat application and an Android productivity application.
+
+He currently serves as a Technical Member of Google Developer Group on Campus and has demonstrated academic excellence and competitive achievements.
