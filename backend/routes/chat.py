@@ -15,21 +15,20 @@ class ChatRequest(BaseModel):
 
 @router.post("/chat")
 def chat(request: ChatRequest):
+    try:
+        context = retrieve_context(request.question)
 
-    # Step 1: Retrieve relevant chunks from ChromaDB
-    context = retrieve_context(
-        request.question
-    )
+        prompt = build_prompt(
+            question=request.question,
+            context=context
+        )
 
-    # Step 2: Build RAG prompt
-    prompt = build_prompt(
-        question=request.question,
-        context=context
-    )
+        answer = ask_gemini(prompt)
 
-    # Step 3: Send to Gemini
-    answer = ask_gemini(prompt)
+        return {"answer": answer}
 
-    return {
-        "answer": answer
-    }
+    except Exception as e:
+        return {
+            "answer": "UMM...Hm...I am not able to process given request for now. You may ask something else or may return later.",
+            "error": str(e)
+        }

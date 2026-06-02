@@ -22,7 +22,8 @@ client = chromadb.PersistentClient(
 
 # Collection
 collection = client.get_or_create_collection(
-    name="rasgulla_ai_knowledge"
+    name="rasgulla_ai_knowledge",
+    embedding_function=None  # we will set proper strategy during build step
 )
 
 
