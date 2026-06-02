@@ -1,12 +1,15 @@
 from sentence_transformers import SentenceTransformer
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
-
+model = None
 
 def generate_embedding(text: str):
-    """
-    Convert text into vector embedding.
-    """
+
+    global model
+
+    if model is None:
+        model = SentenceTransformer(
+            "all-MiniLM-L6-v2"
+        )
 
     embedding = model.encode(text)
 
