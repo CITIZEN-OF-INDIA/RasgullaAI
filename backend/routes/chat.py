@@ -28,7 +28,9 @@ def chat(request: ChatRequest):
         return {"answer": answer}
 
     except Exception as e:
+        print("🔥 ERROR IN CHAT FLOW:", e)
+
         return {
-            "answer": "UMM...Hm...I am not able to process given request for now. You may ask something else or may return later.",
-            "error": str(e)
-        }
+        "answer": "Backend error occurred",
+        "error": str(e)
+    }
