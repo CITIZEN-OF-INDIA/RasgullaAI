@@ -27,6 +27,12 @@
   box-sizing:border-box;
 }
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
 html{
   scroll-behavior:smooth;
 }
@@ -56,12 +62,17 @@ body{
 #root{
   min-height:100vh;
   height:100vh;
+  width: 100%;
+  max-width: 100%;
 }
 
 .app-container,
 .home-container {
   min-height: 100vh;
   height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .home-container {
@@ -72,6 +83,8 @@ body{
 .main-content {
   flex: 1;
   min-height: 0;
+  width: 100%;
+  min-width: 0;
 }
 
 button{
@@ -83,6 +96,7 @@ button{
 input,
 textarea{
   font-family:inherit;
+  min-width: 0;
 }
 
 a{
@@ -204,6 +218,7 @@ a{
   border-radius:12px;
 
   transition:.25s;
+  white-space: nowrap;
 }
 
 .nav-btn:hover{
@@ -218,42 +233,244 @@ a{
 
   transition:.25s;
 }
+
+.navbar,
+.navbar-brand,
+.navbar-right,
+.chat-container,
+.messages-panel,
+.input-wrapper {
+  min-width: 0;
+}
+
+.navbar {
+  width: 100%;
+  gap: 16px;
+}
+
+.navbar-brand {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.brand-title {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.navbar-brand p {
+  max-width: 100%;
+}
+
+.navbar-right {
+  flex: 0 1 auto;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.messages-panel,
+.chat-input-area {
+  width: 100%;
+  min-width: 0;
+}
+
+.welcome-panel {
+  width: 100%;
+}
+
+.prompt-grid {
+  width: 100%;
+}
+
+.prompt-grid button {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.input-wrapper {
+  width: 100%;
+}
+
+.chat-input {
+  min-width: 0;
+}
+
+.icon-action-btn,
+.send-action-btn {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 980px) {
+nav {
+padding: 16px 20px !important;
+}
+
+.navbar {
+gap: 12px;
+}
+
+.brand-title {
+font-size: 1.25rem !important;
+}
+
+.navbar-brand p {
+font-size: .8rem !important;
+}
+
+.navbar-right {
+gap: 8px !important;
+}
+
+.nav-btn,
+.new-chat-btn {
+padding: 10px 12px !important;
+font-size: .9rem;
+}
+}
+
+@media (max-width: 860px) {
+.navbar-right {
+display: none !important;
+}
+}
+
+@supports (height: 100svh) {
+  #root,
+  .app-container,
+  .home-container {
+    min-height: 100svh;
+    height: 100svh;
+  }
+}
+
 @media (max-width: 768px) {
 
+body {
+overflow-x: hidden;
+}
+
 nav {
-padding: 16px !important;
+padding: 14px 16px !important;
 }
 
 .navbar-right {
 display: none;
 }
 
+.navbar {
+align-items: flex-start !important;
+}
+
+.brand-title {
+font-size: 1.25rem !important;
+}
+
+.navbar-brand p {
+font-size: .78rem !important;
+line-height: 1.35;
+}
+
 .chat-container {
 height: 100% !important;
+max-width: 100% !important;
+}
+
+.messages-panel {
+padding: 24px 14px !important;
+}
+
+.welcome-panel {
+margin: 28px auto !important;
+}
+
+.rasgulla-welcome-avatar {
+width: 70px;
+height: 70px;
+margin-bottom: 16px;
+border-radius: 18px;
 }
 
 .welcome-title {
-font-size: 2rem !important;
+font-size: clamp(1.65rem, 9vw, 2rem) !important;
+line-height: 1.12;
 }
 
 .welcome-subtitle {
 font-size: .95rem !important;
+line-height: 1.6 !important;
+margin-bottom: 24px !important;
 }
 
 .prompt-grid {
 grid-template-columns: 1fr !important;
+gap: 12px !important;
+}
+
+.prompt-grid button {
+padding: 15px !important;
 }
 
 .message-content {
 margin-left: 0 !important;
 font-size: .95rem !important;
+padding: 15px 16px !important;
+line-height: 1.7 !important;
+border-radius: 16px !important;
+max-width: 100%;
+}
+
+.chat-input-area {
+padding: 10px 12px 12px !important;
 }
 
 .input-wrapper {
-padding: 10px !important;
+padding: 8px !important;
+gap: 8px !important;
+border-radius: 16px !important;
 }
 
 .chat-input {
 font-size: 16px !important;
+padding: 10px 8px !important;
+width: 100%;
+}
+
+.icon-action-btn {
+width: 40px !important;
+height: 40px !important;
+border-radius: 11px !important;
+font-size: .95rem !important;
+}
+
+.send-action-btn {
+width: 42px !important;
+height: 42px !important;
+border-radius: 12px !important;
+font-size: 1rem !important;
+}
+}
+
+@media (max-width: 380px) {
+.brand-title {
+font-size: 1.1rem !important;
+}
+
+.navbar-brand p {
+max-width: 230px;
+}
+
+.input-wrapper {
+gap: 6px !important;
+}
+
+.icon-action-btn {
+width: 36px !important;
+height: 36px !important;
+}
+
+.send-action-btn {
+width: 38px !important;
+height: 38px !important;
 }
 }

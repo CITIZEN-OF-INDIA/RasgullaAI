@@ -8,8 +8,6 @@ const [displayed, setDisplayed] =
 useState("");
 
 useEffect(() => {
-setDisplayed("");
-
 let index = 0;
 
 const interval = setInterval(() => {

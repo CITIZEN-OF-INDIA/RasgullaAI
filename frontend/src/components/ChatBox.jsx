@@ -107,6 +107,7 @@ function ChatBox() {
       {/* MESSAGES */}
 
       <div
+        className="messages-panel"
         ref={messagesRef}
         onScroll={handleScroll}
         style={{
@@ -117,6 +118,7 @@ function ChatBox() {
       >
         {messages.length === 0 ? (
           <div
+            className="welcome-panel"
             style={{
               maxWidth: "900px",
               margin: "80px auto",
@@ -240,6 +242,7 @@ function ChatBox() {
       {/* INPUT */}
 
       <div
+        className="chat-input-area"
         style={{
           padding: "18px",
         }}
@@ -277,6 +280,7 @@ function ChatBox() {
           />
 
           <button
+            className="icon-action-btn"
             style={{
               width: "46px",
               height: "46px",
@@ -293,6 +297,7 @@ function ChatBox() {
           </button>
 
           <button
+            className="send-action-btn"
             onClick={() =>
               handleSend()
             }

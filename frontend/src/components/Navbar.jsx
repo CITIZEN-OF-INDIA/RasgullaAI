@@ -1,6 +1,7 @@
 function Navbar() {
 return (
 <nav
+className="navbar"
 style={{
 display: "flex",
 justifyContent: "space-between",
@@ -14,8 +15,9 @@ alignItems: "center",
     backdropFilter: "blur(20px)",
   }}
 >
-  <div>
+  <div className="navbar-brand">
     <h1
+      className="brand-title"
       style={{
         display: "flex",
         alignItems: "center",
@@ -44,6 +46,7 @@ alignItems: "center",
   </div>
 
   <div
+    className="navbar-right"
     style={{
       display: "flex",
       gap: "12px",
@@ -62,6 +65,7 @@ alignItems: "center",
     </button>
 
     <button
+      className="new-chat-btn"
       style={{
         padding: "12px 18px",
 

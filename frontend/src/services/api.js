@@ -21,17 +21,21 @@ export const askRasgullaAI = async (question) => {
     if (error.response) {
       throw new Error(
         error.response.data.detail ||
-          "Backend returned an error."
+          "Backend returned an error.",
+        { cause: error }
       );
     }
 
     if (error.request) {
       throw new Error(
-        "Cannot connect to RasgullaAI backend."
+        "Cannot connect to RasgullaAI backend.",
+        { cause: error }
       );
     }
 
-    throw new Error("Something went wrong.");
+    throw new Error("Something went wrong.", {
+      cause: error,
+    });
   }
 };
 
