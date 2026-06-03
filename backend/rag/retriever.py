@@ -11,7 +11,7 @@ def _tokenize(text: str):
     return re.findall(r"[a-z0-9+#.]+", text.lower())
 
 
-def _chunk_text(text: str, max_words: int = 140):
+def _chunk_text(text: str, max_words: int = 250):
     words = text.split()
 
     if not words:

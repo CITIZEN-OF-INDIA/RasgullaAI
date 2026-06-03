@@ -18,7 +18,8 @@ Context:
 Question:
 {question}
 
-Answer in a clear, helpful, and concise way:
+Answer in a clear, helpful, and well-explained way.
+You may elaborate when it improves clarity or usefulness.
 """
 
     return prompt
