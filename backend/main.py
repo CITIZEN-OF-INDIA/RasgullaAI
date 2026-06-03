@@ -21,3 +21,10 @@ def root():
     return {
         "message": "RasgullaAI Backend Running"
     }
+
+@app.get("/health")
+def health_check():
+    return {
+        "status": "ok",
+        "service": "RasgullaAI"
+    }
